@@ -4,12 +4,17 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
+    "insert-stylesheet": "^0.1.0",
+    "sheetify": "^6.0.1",
     "xtend": "^4.0.1",
     "yo-yo": "^1.4.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "bankai": "^5.4.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bankai main.js -d -j [ -t sheetify/transform ]"
   },
   "repository": {
     "type": "git",
