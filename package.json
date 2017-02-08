@@ -1,0 +1,25 @@
+{
+  "name": "rangepick",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "xtend": "^4.0.1",
+    "yo-yo": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/callum/rangepick.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/callum/rangepick/issues"
+  },
+  "homepage": "https://github.com/callum/rangepick#readme"
+}
