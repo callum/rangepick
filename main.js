@@ -2,7 +2,7 @@ var yo = require('yo-yo')
 var xtend = require('xtend')
 var calendar = require('./calendar')
 
-var LABELS = 'su mo tu we th fr sa'.split(' ')
+var LABELS = 'mo tu we th fr sa su'.split(' ')
 
 var state = {
   yearMonth: new Date(2017, 0),
@@ -29,8 +29,8 @@ function main () {
 }
 
 function month (yearMonth) {
-  var month = calendar(yearMonth)
-  return yo`<table style="margin: 5px">
+  var month = calendar(yearMonth, 1)
+  return yo`<table style="margin: 5px" border=1 cellpadding=3>
     <thead>
       <tr>
         ${LABELS.map(label => yo`<th>${label}</th>`)}
@@ -38,7 +38,7 @@ function month (yearMonth) {
     </thead>
     <tbody>
       ${month.map(monthWeek => yo`<tr>
-        ${monthWeek.map(monthDay => yo`<td align=right onclick=${updateRange.bind(null, monthDay)}>
+        ${monthWeek.map(monthDay => yo`<td align=center onclick=${updateRange.bind(null, monthDay)}>
           ${day(monthDay)}
         </td>`)}
       </tr>`)}
